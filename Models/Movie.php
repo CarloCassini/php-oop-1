@@ -4,7 +4,8 @@ class Movie
 {
     public $title;
     public $genere;
-    public $minutes;
+    // qui ho testato come voglio che sia dichiarata una variabile
+    public float $minutes;
     public $language;
     public $averageRate;
     // questo elemento è gestito all'infori del costruct
@@ -24,6 +25,14 @@ class Movie
         $this->averageRate = $averageRate;
 
     }
+
+    // metodi:
+
+    public function TitleUpperCase()
+    {
+        $this->title = strtoupper($this->title);
+    }
+
 
 }
 ;

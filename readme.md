@@ -6,10 +6,10 @@
 
 ## classe movie:
 
-- all'interno della classe sono dichiarate delle variabili d'istanza
-- all'interno della classe è definito un costruttore
-- all'interno della classe è definito almeno un metodo
-- vengono istanziati almeno due oggetti Movie e stampati a schermo i valori delle relative proprietà
+- all'interno della classe sono dichiarate delle variabili d'istanza (fatto)
+- all'interno della classe è definito un costruttore(fatto)
+- all'interno della classe è definito almeno un metodo(fatto)
+- vengono istanziati almeno due oggetti Movie e stampati a schermo i valori delle relative proprietà(fatto)
 - è definita una classe Genre che, con la composizione, viene associata ai Movie.
 
 Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle. Possiamo ad esempio organizzare il codice
