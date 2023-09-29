@@ -10,7 +10,7 @@
 - all'interno della classe è definito un costruttore(fatto)
 - all'interno della classe è definito almeno un metodo(fatto)
 - vengono istanziati almeno due oggetti Movie e stampati a schermo i valori delle relative proprietà(fatto)
-- è definita una classe Genre che, con la composizione, viene associata ai Movie.
+- è definita una classe Genre che, con la composizione, viene associata ai Movie.(fatto)
 
 Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle. Possiamo ad esempio organizzare il codice
 creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php

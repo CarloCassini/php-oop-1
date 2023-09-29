@@ -17,17 +17,33 @@ var_dump($categoria_2);
 </head>
 
 <body>
-    <h1>stampo il titolo del primo film</h1>
-    <h3>
-        <?php echo $movie_1->title ?>
-    </h3>
-    <h1>stampo il titolo dopo aver chiamato il metodo per le lettere maiuscole</h1>
+    <div>
 
-    <h3>
-        <?php
-        $movie_1->TitleUpperCase();
-        echo $movie_1->title ?>
-    </h3>
+        <h1>stampo il titolo del primo film</h1>
+        <h3>
+            <?php var_dump($movie_1) ?>
+        </h3>
+        <h1>stampo il titolo dopo aver chiamato il metodo per le lettere maiuscole</h1>
+
+        <h3>
+            <?php
+            $movie_1->TitleUpperCase();
+            var_dump($movie_1) ?>
+        </h3>
+    </div>
+    <div>
+        <h1>stampo il titolo del secondo film</h1>
+        <h3>
+            <?php var_dump($movie_2) ?>
+        </h3>
+        <h1>stampo il titolo dopo aver chiamato il metodo per le lettere maiuscole</h1>
+
+        <h3>
+            <?php
+            $movie_1->TitleUpperCase();
+            var_dump($movie_2) ?>
+        </h3>
+    </div>
 </body>
 
 </html>
