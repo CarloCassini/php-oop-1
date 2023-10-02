@@ -11,8 +11,8 @@ class Movie extends Production
         $genere,
         $language,
         $averageRate,
-        $published_year = null,
-        $running_time = null
+        $published_year,
+        $running_time
     ) {
         parent::__construct(
             $title,
@@ -21,8 +21,8 @@ class Movie extends Production
             $averageRate
         );
 
-        // $this->published_year = $published_year;
-        // $this->running_time = $running_time;
+        $this->published_year = $published_year;
+        $this->running_time = $running_time;
 
 
     }

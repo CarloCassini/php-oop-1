@@ -2,8 +2,11 @@
 
 include __DIR__ . "./Models/Production.php";
 include __DIR__ . "./Models/Movie.php";
+include __DIR__ . "./Models/TvSerie.php";
 include __DIR__ . "./Models/Genere.php";
 
+// array di tutti gli oggetti che andrò a creare:
+$all_production = [];
 // le categorie sono le seguenti:
 $categoria_1 = new Genere("azzurro");
 $categoria_2 = new Genere("babbano");
@@ -14,11 +17,18 @@ $array_categorie = [];
 $array_categorie[] = $categoria_1;
 $array_categorie[] = $categoria_2;
 
-$movie_1 = new Movie("ciccio", $array_categorie, "dell'amore", 4, );
+$movie_1 = new Movie("ciccio", $array_categorie, "dell'amore", 4, 1994, 120);
+$all_production[] = $movie_1;
 
-// $movie_1->title = "il signore degli anelli";
+$movie_2 = new Movie("lollo", $categoria_3, "a", "a", 2008, 120);
+$all_production[] = $movie_2;
+$movie_3 = new Movie("lollo", $categoria_3, "a", "a", 2008, 120);
+$all_production[] = $movie_3;
 
-$movie_2 = new Movie("lollo", $categoria_3, 12.4, "a", "a", );
-// $movie_2->language = "italiano";
+$array_categorie = [];
+$array_categorie[] = $categoria_3;
+$array_categorie[] = $categoria_3;
 
+$tv_serie_1 = new TvSerie("rodrighetto va in campagna", $array_categorie, "singapense", 4, 2010, 2020, 3, 3);
+$all_production[] = $tv_serie_1;
 ?>

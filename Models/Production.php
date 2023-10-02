@@ -1,5 +1,6 @@
 <?php
 
+
 class Production
 {
     public $title;
@@ -28,6 +29,13 @@ class Production
         $this->title = strtoupper($this->title);
     }
 
+    public function GetDetails()
+    {
+
+        return $this->title;
+        // $this->testoGeneri;
+        // return $this->$title . ", " $this->$genere . ", " $this->language  . ", "$this->$averageRate;
+    }
 
 }
 ;

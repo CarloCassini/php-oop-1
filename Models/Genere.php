@@ -20,6 +20,10 @@ class Genere
             $this->adulti = true;
         }
     }
+    public function GetDetailsGenere()
+    {
+        return $this->categoria;
+    }
 
 
 }
