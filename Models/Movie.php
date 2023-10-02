@@ -34,7 +34,18 @@ class Movie extends Production
         $this->title = strtoupper($this->title);
     }
 
+    public function GetDetails()
+    {
 
+        return "
+        <strong> titolo: </strong>$this->title, <br>
+        <strong> language: </strong>$this->language, <br>
+        <strong> published_year: </strong>$this->published_year, <br>
+        <strong> running_time: </strong>$this->running_time, <br>
+        <strong> averageRate: </strong>$this->averageRate, <br>
+
+        ";
+    }
 }
 ;
 

@@ -32,9 +32,11 @@ class Production
     public function GetDetails()
     {
 
-        return $this->title;
-        // $this->testoGeneri;
-        // return $this->$title . ", " $this->$genere . ", " $this->language  . ", "$this->$averageRate;
+        return "
+        <strong> titolo: </strong>$this->title, <br>
+        <strong> language: </strong>$this->language, <br>
+        <strong> averageRate: </strong>$this->averageRate, <br>
+        ";
     }
 
 }

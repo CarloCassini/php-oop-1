@@ -40,7 +40,19 @@ class TvSerie extends Production
     {
         $this->title = strtoupper($this->title);
     }
+    public function GetDetails()
+    {
 
+        return "
+        <strong> titolo: </strong>$this->title, <br>
+        <strong> language: </strong>$this->language, <br>
+        <strong> aired_from_year: </strong>$this->aired_from_year, <br>
+        <strong> aried_to_year: </strong>$this->aried_to_year, <br>
+        <strong> number_of_episodes: </strong>$this->number_of_episodes, <br>
+        <strong> number_of_series: </strong>$this->number_of_series, <br>
+        <strong> averageRate: </strong>$this->averageRate, <br>
+        ";
+    }
 
 }
 ;
