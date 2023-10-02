@@ -13,7 +13,6 @@ $categoria_3 = new Genere("Foruncoloso");
 $array_categorie = [];
 $array_categorie[] = $categoria_1;
 $array_categorie[] = $categoria_2;
-var_dump($array_categorie);
 
 $movie_1 = new Movie("ciccio", $array_categorie, "dell'amore", 4, );
 

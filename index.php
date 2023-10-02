@@ -1,10 +1,5 @@
 <?php
 include __DIR__ . "./db.php";
-
-// var_dump($movie_1);
-// var_dump($movie_2)
-var_dump($categoria_1);
-var_dump($categoria_2);
 ?>
 
 <!DOCTYPE html>
