@@ -1,28 +1,27 @@
 <?php
 
-class Movie
+class Movie extends Production
 {
-    public $title;
-    public $genere;
-    // qui ho testato come voglio che sia dichiarata una variabile
-    public float $minutes;
-    public $language;
-    public $averageRate;
-    // questo elemento è gestito all'infori del costruct
-    public $test;
+    public int $published_year;
+    public int $running_time;
 
     function __construct(
         $title,
         $genere,
-        $minutes,
         $language,
-        $averageRate
+        $averageRate,
+        $published_year,
+        $running_time
     ) {
-        $this->title = $title;
-        $this->genere = $genere;
-        $this->minutes = $minutes;
-        $this->language = $language;
-        $this->averageRate = $averageRate;
+        parent::__construct(
+            $title,
+            $genere,
+            $language,
+            $averageRate
+        );
+        $this->published_year = $published_year;
+        $this->running_time = $running_time;
+
 
     }
 
