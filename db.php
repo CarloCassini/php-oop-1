@@ -1,5 +1,7 @@
 <?php
 
+
+// include __DIR__ . "./Models/Hurra.php";
 include __DIR__ . "./Models/Production.php";
 include __DIR__ . "./Models/Movie.php";
 include __DIR__ . "./Models/TvSerie.php";
@@ -31,4 +33,11 @@ $array_categorie[] = $categoria_3;
 
 $tv_serie_1 = new TvSerie("rodrighetto va in campagna", $array_categorie, "singapense", 4, 2010, 2020, 3, 3);
 $all_production[] = $tv_serie_1;
+$tv_serie_2 = new TvSerie("rodrighetto va in campagna 2", $array_categorie, "singapense", 4, 2010, 2020, 3, 3);
+$all_production[] = $tv_serie_2;
+$tv_serie_3 = new TvSerie("rodrighetto va in campagna - l'armagheddon annunciato", $array_categorie, "singapense", 4, 2010, 2020, 3, 3);
+$all_production[] = $tv_serie_3;
+
+$movie_3 = new Movie("rodrighetto va in campagna - IL FILM ", $categoria_3, "a", "a", 2008, 120);
+$all_production[] = $movie_3;
 ?>

@@ -23,14 +23,20 @@ include __DIR__ . "./db.php";
     <div class="container">
         <div class="row">
             <?php foreach ($all_production as $product): ?>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <?php echo $product->GetDetails() ?>
-                        </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        <?php echo $product->GetDetails();
+                            // scrivi hurrà solo se si tratta di un film
+                            if (get_class($product) == 'Movie') {
 
+                                $product->SayHurra();
+                            }
+                            ?>
                     </div>
+
                 </div>
+            </div>
             <?php endforeach ?>
         </div>
     </div>

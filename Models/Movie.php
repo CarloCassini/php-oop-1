@@ -3,6 +3,7 @@
 
 class Movie extends Production
 {
+    use Hurra;
     public int $published_year;
     public int $running_time;
 
